@@ -38,8 +38,10 @@ document.getElementById('addToWishlistButton').addEventListener('click', functio
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  fbq('track', 'AddToCart');
+  fbq('init', '655003916939237', { external_id: 'customer_123' });
+  fbq('track', 'AddToCart', {}, { eventID: 'test-003' });
 }, false);
+
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
   fbq('track', 'InitiateCheckout');
