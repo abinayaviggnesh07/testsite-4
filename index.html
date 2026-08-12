@@ -44,9 +44,10 @@ document.getElementById('addToCartButton').addEventListener('click', function() 
 
   fbq('track', 'AddToCart', {
     content_type: 'product',
-    currency: 'USD',      // browser only
-    value: 139.99         // in both -> untagged
-  }, { eventID: 'test-013' });
+    currency: 'USD',        // browser only
+    value: 139.99,          // in both -> untagged
+    test_event_code: 'TEST3614'
+  }, { eventID: 'test-014' });
 
 }, false);
 
